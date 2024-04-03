@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,13 +7,13 @@
     <title>Flash Fiction Book Shelf</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Book Shelf</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -48,6 +48,399 @@
         </div>
       </div>
     </nav>
+    <main>
+
+<div class="book-wrapper"> 
+  <div class="instruction">Flip the page</div>
+  <div class="book">
+    <div class="page cover-front" onclick="movePage(this, 1)">
+      <h1>Mrs. Dalloway</h1>
+      <div class="hat"><i class="fab fa-pied-piper-hat"></i></div>
+      <h2>Virginia Woolf</h2>
+    </div>
+    <div class="page cover-front" onclick="movePage(this, 2)"></div>
+    <div class="page text-page" onclick="movePage(this, 3)">
+      <p>Mrs. Dalloway said she would buy the flowers herself.</p>
+      <p>For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer's men were coming. And then, thought Clarissa Dalloway, what a morning--fresh as if issued to children on a beach.</p>
+      <p>What a lark! What a plunge! For so it had always seemed to her, when, with a little squeak of the hinges, which she could hear now, she had burst open the French windows and plunged at Bourton into the open air. How fresh, how calm, stiller than this of course, the air was in the early morning; like the flap of a wave; the kiss of a wave; chill and sharp and yet (for a girl of eighteen as she then was) solemn, feeling as she did, standing there at the open window, that something awful was about to happen; looking at the flowers, at the trees with the smoke winding off them and the rooks rising, falling; standing and looking until Peter Walsh said, "Musing among the vegetables?"--was that it?--"I prefer men to cauliflowers"--was that it? He must have said it at breakfast one morning when she had gone out on to the terrace--Peter Walsh. He would be back from India one of these days, June or July, she forgot which, for his letters were awfully dull; it was his sayings one remembered; his eyes, his pocket-knife, his smile, his grumpiness and, when millions of things had utterly</p>
+    </div>
+    <div class="page text-page" onclick="movePage(this, 4)">
+      <p>vanished--how strange it was!--a few sayings like this about cabbages.</p>
+      <p>She stiffened a little on the kerb, waiting for Durtnall's van to pass. A charming woman, Scrope Purvis thought her (knowing her as one does know people who live next door to one in Westminster); a touch of the bird about her, of the jay, blue-green, light, vivacious, though she was over fifty, and grown very white since her illness. There she perched, never seeing him, waiting to cross, very upright.</p>
+      <p>For having lived in Westminster--how many years now? over twenty,--one feels even in the midst of the traffic, or waking at night, Clarissa was positive, a particular hush, or solemnity; an indescribable pause; a suspense (but that might be her heart, affected, they said, by influenza) before Big Ben strikes. There! Out it boomed. First a warning, musical; then the hour, irrevocable. The leaden circles dissolved in the air. Such fools we are, she thought, crossing Victoria Street. For Heaven only knows why one loves it so, how one sees it so, making it up, building it round one, tumbling it, creating it every moment afresh; but the veriest frumps, the most dejected of miseries sitting on doorsteps (drink their downfall) do the same; can't be dealt with, she felt positive, by Acts of Parliament for that very reason: they love life. In people's eyes, in the swing, tramp, and trudge; in the bellow and</p>
+    </div>
+    <div class="page text-page" onclick="movePage(this, 5)">
+      <p> the uproar; the carriages, motor cars, omnibuses, vans, sandwich men shuffling and swinging; brass bands; barrel organs; in the triumph and the jingle and the strange high singing of some aeroplane overhead was what she loved; life; London; this moment of June.</p>
+      <p>For it was the middle of June. The War was over, except for some one like Mrs. Foxcroft at the Embassy last night eating her heart out because that nice boy was killed and now the old Manor House must go to a cousin; or Lady Bexborough who opened a bazaar, they said, with the telegram in her hand, John, her favourite, killed; but it was over; thank Heaven--over. It was June. The King and Queen were at the Palace. And everywhere, though it was still so early, there was a beating, a stirring of galloping ponies, tapping of cricket bats; Lords, Ascot, Ranelagh and all the rest of it; wrapped in the soft mesh of the grey-blue morning air, which, as the day wore on, would unwind them, and set down on their lawns and pitches the bouncing ponies, whose forefeet just struck the ground and up they sprung, the whirling young men, and laughing girls in their transparent muslins who, even now, after dancing all night, were taking their absurd woolly dogs for a run; and even now, at this hour, discreet old dowagers were shooting out in their motor cars on errands of mystery;  and the shopkeepers were fidgeting in their windows with their paste and diamonds, their lovely old sea-green brooches in </p>
+    </div>
+    <div class="page text-page" onclick="movePage(this, 6)">
+      <p>eighteenth-century settings to tempt Americans (but one must economise, not buy things rashly for Elizabeth), and she, too, loving it as she did with an absurd and faithful passion, being part of it, since her people were courtiers once in the time of the Georges, she, too, was going that very night to kindle and illuminate; to give her party. But how strange, on entering the Park, the silence; the mist; the hum; the slow-swimming happy ducks; the pouched birds waddling; and who should be coming along with his back against the Government buildings, most appropriately, carrying a despatch box stamped with the Royal Arms, who but Hugh Whitbread; her old friend Hugh--the admirable Hugh!</p>
+      <p>"Good-morning to you, Clarissa!" said Hugh, rather extravagantly, for they had known each other as children. "Where are you off to?"</p>
+      <p>"I love walking in London," said Mrs. Dalloway. "Really it's better than walking in the country."</p>
+    </div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+  </div>
+</div>
+    </main>
+    <main class="d-none">
+      <form class="container" id="shelf">
+        <input type="radio" name="title" id="book1"/>
+        <input type="radio" name="title" id="book2"/>
+        <input type="radio" name="title" id="book3"/>
+        <input type="radio" name="title" id="book4"/>
+        <input type="radio" name="title" id="book5"/>
+        <input type="radio" name="title" id="book6"/>
+        <input type="radio" name="title" id="book7"/>
+        <input type="radio" name="title" id="book8"/>
+        <input type="radio" name="title" id="book9"/>
+        <input type="radio" name="title" id="book10"/>
+        <input type="radio" name="title" id="book11"/>
+        <div class="surface">
+          <div class="block b1">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front"></div>
+              <div class="left"></div>
+              <div class="right"></div>
+              <div class="top"></div>
+            </div>
+          </div>
+          <div class="block b2">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front"></div>
+              <div class="left"></div>
+              <div class="right"></div>
+              <div class="top"></div>
+            </div>
+          </div>
+          <div class="block b3">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front"></div>
+              <div class="left"></div>
+              <div class="right"></div>
+              <div class="top"></div>
+            </div>
+          </div>
+          <div class="block b4">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front"></div>
+              <div class="left"></div>
+              <div class="right"></div>
+              <div class="top"></div>
+            </div>
+          </div>
+          <div class="block b5">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front"></div>
+              <div class="left"></div>
+              <div class="right"></div>
+              <div class="top"></div>
+            </div>
+          </div>
+          <label class="block b6" for="book1">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">The Color Chucknorris</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="The Color Chucknorris">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b7" for="book2">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">The Phisherman and His Wife</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="The Phisherman and His Wife">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b8" for="book3">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">The Little Browser Engine That Couldn’t</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="The Little Browser Engine That Couldn’t">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b9" for="book4">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">The DOM-Tree</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="The DOM-Tree">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b10" for="book5">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">Sliding Into Auto-DMs</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="Sliding Into Auto-DMs">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b11" for="book6">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">Copying and Pasting from Stack Overflow</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="Copying and Pasting from Stack Overflow">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b12" for="book7">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">WordPress Updates Breaking Stuff</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="WordPress Updates Breaking Stuff">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b13" for="book8">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">Waiting for Internet Explorer to Die</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="Waiting for Internet Explorer to Die">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b14" for="book9">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">Copypaste Customer Support</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="Copypaste Customer Support">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b15" for="book10">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">Catchy Clickbait Titles and Buzzwords</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="Catchy Clickbait Titles and Buzzwords">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+          <label class="block b16" for="book11">
+            <div class="block-inner">
+              <div class="back"></div>
+              <div class="bottom"></div>
+              <div class="front">
+                <div class="spine">Spamming with Scrapebox</div>
+              </div>
+              <div class="left"></div>
+              <div class="right" data-title="Spamming with Scrapebox">
+                <div class="cover"></div>
+                <div class="contents">
+                  <h1>Chapter 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="top"></div>
+            </div>
+          </label>
+        </div>
+        <input type="reset" value="Return"/>
+      </form>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
