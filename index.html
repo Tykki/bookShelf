@@ -9,7 +9,7 @@
   <body>
     <nav class="navbar navbar-expand-lg shadow mb-4" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-        <a class="navbar-brand active" href="#">Book Shelf</a>
+        <a class="navbar-brand active" href="#home">Book Shelf</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,16 +21,16 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shelf</a>
+                <a class="nav-link" href="#shelf">Shelf</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Schedule</a>
+                <a class="nav-link" href="#schedule">Schedule</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Donate</a>
+                <a class="nav-link" href="#book">Donate</a>
               </li>
             </ul>
           </div>
@@ -39,7 +39,7 @@
     </nav>
     <!-- END OF NAV -->
     <!-- Home Page -->
-    <main class="d-none">
+    <main id="home" class="d-none">
       <header class="py-5">
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5 bg-gradient rounded-3 text-center">
@@ -115,7 +115,7 @@
     </section>
    
     </main>
-    <main class="">
+    <main id="book" class="">
     <div class="container">
         <div class="flip-book" id="demoBookExample">
             <div class="page page-cover page-cover-top" data-density="hard">
@@ -168,7 +168,8 @@
   </div>
     </main>
     <!-- End Of Book -->
-    <main class="d-none">
+
+    <main id="shelf" class="d-none">
       <form class="container" id="shelf">
         <input type="radio" name="title" id="book1"/>
         <input type="radio" name="title" id="book2"/>
@@ -433,6 +434,9 @@
         </div>
         <input type="reset" value="Return"/>
       </form>
+    </main>
+    <main id="schedule">
+      <h1>Scheduling The Next Work Piece...</h1>
     </main>
      <!-- Footer-->
      <footer class="py-5 shadow-lg">
