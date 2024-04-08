@@ -4,53 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flash Fiction Book Shelf</title>
+    <title>Tykki's Book Shelf</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg shadow mb-4" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Book Shelf</a>
+        <a class="navbar-brand active" href="#">Book Shelf</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Shelf</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Donate</a>
               </li>
             </ul>
-            <form class="d-flex mt-3 mt-lg-0" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </div>
     </nav>
     <!-- END OF NAV -->
     <!-- Home Page -->
-    <main>
+    <main class="d-none">
       <header class="py-5">
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5 bg-gradient rounded-3 text-center">
@@ -126,12 +115,12 @@
     </section>
    
     </main>
-    <main class="d-none">
+    <main class="">
     <div class="container">
         <div class="flip-book" id="demoBookExample">
             <div class="page page-cover page-cover-top" data-density="hard">
                 <div class="page-content">
-                    <h2>BOOK TITLE?</h2>
+                    <h2>Harsh Realities</h2>
                 </div>
             </div>
             <div class="page">
@@ -446,8 +435,8 @@
       </form>
     </main>
      <!-- Footer-->
-     <footer class="py-5 bg-dark">
-      <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+     <footer class="py-5 shadow-lg">
+      <div class="container"><p class="m-0 text-center text-white">Dev By Tykki &copy; 2024</p></div>
     </footer>
     <script type="module" src="./main.js"></script>
     <!-- <script type="module" src="./assets/js/book.js"></script> -->
