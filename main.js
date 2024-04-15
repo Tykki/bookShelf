@@ -5,6 +5,7 @@ import * as bootstrap from 'bootstrap'
 
 const pages = document.querySelectorAll('main')
 const links = document.querySelectorAll('.nav-link')
+const pageUrls = ['./assets/pages/home.html', './assets/pages/shelf.html', './assets/pages/scheduling.html', './assets/pages/book.html']
 
 let flag;
 const hide = () => {
@@ -41,5 +42,23 @@ const hashHandler = (hash) => {
         }
     })
  }
+
+ const buildSite = () => {
+    Promise.all(pageUrls.map(url => 
+        fetch(url).then(res => res.text())
+    )).then(txts => {
+        console.log(txts)
+        pages.forEach((p, i) => p.innerHTML = txts[i])
+    })
+    fetch('./assets/pages/shelf.html').then(function (response) {
+        if (response.ok) {
+            return response.text();
+        }
+        throw response;
+    }).then(function (text) {
+        document.querySelector('#home').innerHTML = text
+    });
+ }
+ buildSite()
 window.addEventListener('hashchange', (e) => hashHandler(e.target.location.hash))
 hashHandler(window.location.hash)
