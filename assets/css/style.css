@@ -2,6 +2,7 @@
 @import './../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import './shelf.css';
 @import './book.scss';
+@import './featured-book.scss';
 
 nav, footer{
     z-index: 4;
