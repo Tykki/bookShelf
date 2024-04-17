@@ -1,11 +1,11 @@
 import './assets/css/style.css'
-import './assets/js/book.js'
+// import './assets/js/book.js'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
 const pages = document.querySelectorAll('main')
 const links = document.querySelectorAll('.nav-link')
-const pageUrls = ['./assets/pages/home.html', './assets/pages/shelf.html', './assets/pages/scheduling.html', './assets/pages/book.html']
+const pageUrls = ['./assets/pages/home.html', './assets/pages/about.html', './assets/pages/shelf.html', './assets/pages/scheduling.html',]
 
 let flag;
 const hide = () => {
@@ -48,16 +48,16 @@ const hashHandler = (hash) => {
         fetch(url).then(res => res.text())
     )).then(txts => {
         console.log(txts)
-        pages.forEach((p, i) => p.innerHTML = txts[i])
+        pages.forEach((p, i) => p.innerHTML = txts[i] ? txts[i] : p.innerHTML)
     })
-    fetch('./assets/pages/shelf.html').then(function (response) {
-        if (response.ok) {
-            return response.text();
-        }
-        throw response;
-    }).then(function (text) {
-        document.querySelector('#home').innerHTML = text
-    });
+    // fetch('./assets/pages/shelf.html').then(function (response) {
+    //     if (response.ok) {
+    //         return response.text();
+    //     }
+    //     throw response;
+    // }).then(function (text) {
+    //     document.querySelector('#home').innerHTML = text
+    // });
  }
  buildSite()
 window.addEventListener('hashchange', (e) => hashHandler(e.target.location.hash))
