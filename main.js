@@ -1,5 +1,7 @@
 import './assets/css/style.css'
 import './assets/js/book.js'
+import './assets/js/bs-theme-toggle.js'
+import './assets/js/shelf.js'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
@@ -18,7 +20,7 @@ const hide = () => {
     })
 }
 const hashHandler = (hash) => {
-    console.log('step 2', hash)
+    // console.log('step 2', hash)
     if (!hash) {
         return
     }
@@ -27,7 +29,7 @@ const hashHandler = (hash) => {
     // Active Class on navbar if we doing that
     pages.forEach((page) => {
         if (hash === `#${page.id}`) {
-            console.log('pass')
+            // console.log('pass')
             page.classList.remove('d-none')
             flag = true
         }
@@ -48,7 +50,7 @@ const hashHandler = (hash) => {
     Promise.all(pageUrls.map(url => 
         fetch(url).then(res => res.text())
     )).then(txts => {
-        console.log(txts)
+        // console.log(txts)
         pagesBuild.forEach((p, i) => p.innerHTML = txts[i])
     })
     // fetch('./assets/pages/shelf.html').then(function (response) {
