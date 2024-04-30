@@ -1,7 +1,7 @@
 import {PageFlip} from 'page-flip';
+import books from './shelf.js'
 
-document.addEventListener('DOMContentLoaded', function() {
-
+const initPage = () => {
     const pageFlip = new PageFlip(
         document.getElementById("demoBookExample"),
         {
@@ -51,4 +51,78 @@ document.addEventListener('DOMContentLoaded', function() {
     pageFlip.on("changeOrientation", (e) => {
         document.querySelector(".page-orientation").innerText = e.data;
     });
-});
+}
+
+// document.addEventListener('DOMContentLoaded', initPage());
+
+const chooseBook = (ind) => {
+    const book = books[ind]
+    if (book.text) { 
+        document.querySelector('#book').innerHTML = `
+        <div class="container">
+            <div class="flip-book" id="demoBookExample" data-ind="${ind}">
+                <div class="page page-cover page-cover-top" data-density="hard">
+                    <div class="page-content">
+                        <h2>${book.name}</h2>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header">Page header 1</h2>
+                        <div class="page-image" style="background-image: url(${book.imgs[0]})"></div>
+                        <div class="page-text">${book.text[0]}</div>
+                        <div class="page-footer">2</div>
+                    </div>
+                </div>
+                <!-- Pages Of Book .... -->
+                <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header">Page header - 2</h2>
+                        <div class="page-image" style="background-image: url(${book.imgs[1]})"></div>
+                        <div class="page-text">${book.text[1]}</div>
+                        <div class="page-footer">3</div>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header">Page header - 3</h2>
+                        <div class="page-image" style="background-image: url(${book.imgs[2]})"></div>
+                        <div class="page-text">${book.text[2]}</div>
+                        <div class="page-footer">3</div>
+                    </div>
+                </div>
+                <div class="page page-cover page-cover-bottom" data-density="hard">
+                    <div class="page-content">
+                        <h2>"THE END"</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center my-4">
+        <div>
+            <button type="button" class="btn-prev">Previous page</button>
+            [<span class="page-current">1</span> of <span class="page-total">-</span>]
+            <button type="button" class="btn-next">Next page</button>
+        </div>
+    
+        <div>
+            State: <i class="page-state">read</i>, orientation: <i class="page-orientation">landscape</i>
+        </div>
+    </div>
+    `
+    localStorage.setItem('bookInd', ind)
+    initPage();
+    location.hash = "#book"
+    } else {
+        location.hash = "#shelf"
+    }
+  }
+
+  document.querySelectorAll('.choose-book').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault
+      chooseBook(link.dataset.ind)
+    })
+  })
+
+export { chooseBook, books };

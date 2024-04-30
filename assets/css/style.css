@@ -3,6 +3,46 @@
 @import './shelf.css';
 @import './book.scss';
 @import './featured-book.scss';
+@import './schedule.scss';
+@import './donate.scss';
+
+[data-bs-theme=dark]{
+
+  body{
+    background-blend-mode: screen;
+    background: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/bg-stars.svg),
+      linear-gradient(0deg, rgba(37, 29, 44, 1) 33%, rgba(30, 30, 40, 1) 50%);
+  }
+
+
+footer{
+  background-image: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/pattern-hills.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 20%;
+	width: 100%;
+}
+}
+
+[data-bs-theme=light] {
+  body {
+    background-blend-mode: color-dodge;
+    background: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/bg-stars.svg),
+    linear-gradient(to right, #d3cce3, #e9e4f0);
+  }
+  footer{
+    mix-blend-mode: soft-light;
+    background-image: url(https://raw.githubusercontent.com/alleycaaat/frontend-mentor/main/countdown-timer/images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20%;
+    width: 100%;
+  }
+}
+
+#home .card {
+  background-color: transparent;
+}
 
 nav, footer{
     z-index: 4;
@@ -17,6 +57,10 @@ nav, footer{
 }
 .btn-bd-primary:hover{
     background-color: #6528e0;
+}
+
+.carousel-item>img{
+  max-width: 1600px;
 }
 
 /* MARKETING CONTENT
