@@ -64,9 +64,9 @@ const inner = document.querySelector('#home .carousel-inner')
 const featured = document.querySelector('#home .row.gx-lg-5')
 
 slideData.forEach((slide, ind) => {
-    indicators.innerHTML +=`
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="${ind}" class="active" aria-current="true" aria-label="Slide ${ind}"></button>
-    `
+    if (ind === 0) {
+        indicators.innerHTML +=`
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="${ind}" class="active" aria-current="true" aria-label="Slide ${ind}"></button>` 
     inner.innerHTML += `
         <div class="carousel-item active">
             <img src="${slide.img}" class="d-block w-100 mx-auto" alt="...">
@@ -74,9 +74,21 @@ slideData.forEach((slide, ind) => {
                 <h4 class="fw-bold">${slide.title}</h4>
                 <p class="fst-italic">${slide.caption}</p>
             </div>
-        </div>
-    `
-
+        </div>`
+    } else {
+        indicators.innerHTML +=`
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="${ind}" class="" aria-current="true" aria-label="Slide ${ind}"></button>`
+        inner.innerHTML += `
+        <div class="carousel-item">
+            <img src="${slide.img}" class="d-block w-100 mx-auto" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h4 class="fw-bold">${slide.title}</h4>
+                <p class="fst-italic">${slide.caption}</p>
+            </div>
+        </div>`
+    }
+    
+    
 })
 books.forEach(book => {
     featured.innerHTML += `
