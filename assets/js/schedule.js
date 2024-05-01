@@ -4,7 +4,7 @@ const scheduleData = [{
     month: 'May',
     title: 'Reunited, Reignited',
     text: 'She is rude, she is shy, and can be very difficult, but with some affection and the right kind of pampering, he may just melt her soul.',
-    img: './assets/imgs/comingSoonFeat.png',
+    img: new URL('./../imgs/comingSoon.png', import.meta.url).href,
 },{
     month: 'June',
     title: 'N/A',

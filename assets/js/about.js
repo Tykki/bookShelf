@@ -2,15 +2,15 @@ const about = document.querySelector('#about')
 const genreData = [{
     title: 'Fantasy. ',
     text: ['Travel into a new world, each different from the last.', 'Some great placeholder content for the first featurette here. Imagine some exciting prose here'],
-    img: './assets/imgs/fantasyGenre.png'
+    img: new URL('./../imgs/fantasyGenre.png', import.meta.url).href
 }, {
     title: 'Romance. ',
     text: ['Is it wrong to feel something so strong, but so quickly.', 'Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.'],
-    img: './assets/imgs/romanceGenre.png'
+    img: new URL('./../imgs/romanceGenre.png', import.meta.url).href
 }, {
     title: 'Horror. ',
     text: ['Not all chaos is random chaos.', 'And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.'],
-    img: './assets/imgs/horrorGenre.png'
+    img: new URL('./../imgs/horrorGenre.png', import.meta.url).href
 }]
 
 about.innerHTML = `
@@ -55,4 +55,4 @@ genreData.forEach((genre, ind) => {
 `
 })
 
-console.log()
+console.log(window.msg)

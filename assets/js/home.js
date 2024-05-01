@@ -1,11 +1,12 @@
 import {chooseBook, books} from "./book"
-
+// import heroCover from  './../imgs/heroSaviorCover.png'
+window.msg = 'damn'
 const home = document.querySelector('#home')
 
 const slideData = [{
     title: 'Newest Arrival: The Savior and The Hero',
     caption: 'What really defines good, what can we really call evil',
-    img: './assets/imgs/heroSaviorCover.png'
+    img: new URL('./../imgs/heroSaviorCover.png', import.meta.url).href,
 },{
     title: 'Make a Request, Leave Feedback!',
     caption: 'I am always glad to know how to improve and also looking for more inspiration.',
