@@ -63,12 +63,12 @@ const chooseBook = (ind) => {
             <div class="flip-book" id="demoBookExample" data-ind="${ind}">
                 <div class="page page-cover page-cover-top" data-density="hard">
                     <div class="page-content">
-                        <h2>${book.name}</h2>
+                        <img src="${book.feat.img}" />
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <h2 class="page-header">Page header 1</h2>
+                        <h2 class="page-header">${book.name} - 1</h2>
                         <div class="page-image" style="background-image: url(${book.imgs[0]})"></div>
                         <div class="page-text">${book.text[0]}</div>
                         <div class="page-footer">2</div>
@@ -77,7 +77,7 @@ const chooseBook = (ind) => {
                 <!-- Pages Of Book .... -->
                 <div class="page">
                     <div class="page-content">
-                        <h2 class="page-header">Page header - 2</h2>
+                        <h2 class="page-header">${book.name} - 2</h2>
                         <div class="page-image" style="background-image: url(${book.imgs[1]})"></div>
                         <div class="page-text">${book.text[1]}</div>
                         <div class="page-footer">3</div>
@@ -85,15 +85,15 @@ const chooseBook = (ind) => {
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <h2 class="page-header">Page header - 3</h2>
+                        <h2 class="page-header">${book.name} - 3</h2>
                         <div class="page-image" style="background-image: url(${book.imgs[2]})"></div>
                         <div class="page-text">${book.text[2]}</div>
-                        <div class="page-footer">3</div>
+                        <div class="page-footer">4</div>
                     </div>
                 </div>
                 <div class="page page-cover page-cover-bottom" data-density="hard">
                     <div class="page-content">
-                        <h2>"THE END"</h2>
+                        <h2>"FIN"</h2>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ const chooseBook = (ind) => {
             <button type="button" class="btn-next">Next page</button>
         </div>
     
-        <div>
+        <div class="d-none">
             State: <i class="page-state">read</i>, orientation: <i class="page-orientation">landscape</i>
         </div>
     </div>

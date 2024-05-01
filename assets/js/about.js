@@ -2,15 +2,15 @@ const about = document.querySelector('#about')
 const genreData = [{
     title: 'Fantasy. ',
     text: ['Travel into a new world, each different from the last.', 'Some great placeholder content for the first featurette here. Imagine some exciting prose here'],
-    img: 'https://picsum.photos/seed/picsum/500/500'
+    img: './assets/imgs/fantasyGenre.png'
 }, {
     title: 'Romance. ',
     text: ['Is it wrong to feel something so strong, but so quickly.', 'Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.'],
-    img: 'https://picsum.photos/seed/picsum/500/500'
+    img: './assets/imgs/romanceGenre.png'
 }, {
     title: 'Horror. ',
     text: ['Not all chaos is random chaos.', 'And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.'],
-    img: 'https://picsum.photos/seed/picsum/500/500'
+    img: './assets/imgs/horrorGenre.png'
 }]
 
 about.innerHTML = `

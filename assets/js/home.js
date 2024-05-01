@@ -5,7 +5,7 @@ const home = document.querySelector('#home')
 const slideData = [{
     title: 'Newest Arrival: The Savior and The Hero',
     caption: 'What really defines good, what can we really call evil',
-    img: 'https://picsum.photos/seed/picsum/1200/600'
+    img: './assets/imgs/heroSaviorCover.png'
 },{
     title: 'Make a Request, Leave Feedback!',
     caption: 'I am always glad to know how to improve and also looking for more inspiration.',
