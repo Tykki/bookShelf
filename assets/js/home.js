@@ -1,6 +1,5 @@
 import {chooseBook, books} from "./book"
 // import heroCover from  './../imgs/heroSaviorCover.png'
-window.msg = 'damn'
 const home = document.querySelector('#home')
 
 const slideData = [{
@@ -10,11 +9,11 @@ const slideData = [{
 },{
     title: 'Make a Request, Leave Feedback!',
     caption: 'I am always glad to know how to improve and also looking for more inspiration.',
-    img: 'https://picsum.photos/seed/picsum/1200/600'
+    img: new URL('./../imgs/bookRose.png', import.meta.url).href
 },{
-    title: 'Latest Work In Progress: Nameless',
+    title: 'Latest Work In Progress: "Untitled"',
     caption: 'It has the power to eat away your name, and eventually you existence.',
-    img: 'https://picsum.photos/seed/picsum/1200/600'
+    img: new URL('./../imgs/comingSoon.png', import.meta.url).href
 }]
 
 
@@ -101,7 +100,7 @@ books.forEach(book => {
                             <div class="book-cover">
                                 
                                     <img class="book-top" src="${book.feat.img}" />
-                                    <img class="book-side" src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg" alt="book-side" /> 
+                                    <img class="book-side" src="${new URL('./../imgs/book-side.svg', import.meta.url).href}" alt="book-side" /> 
                                 
                             </div>
                             <div class="preface" data-ind="${book.id}">

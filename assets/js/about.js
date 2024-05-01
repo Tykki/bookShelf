@@ -54,5 +54,3 @@ genreData.forEach((genre, ind) => {
     <hr class="featurette-divider">
 `
 })
-
-console.log(window.msg)

@@ -5,7 +5,7 @@ const books = [
         auth: 'Tykki Mikki',
         type: 'Fantasy/Action',
         preview: '“You are a disappointment. To become that Thing\'s puppet… Have you no pride.. Have you no shame!” The voice seemed to echo throughout the dark and seemingly limitless manor. ',
-        imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
+        imgs: [new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href],
         feat: {
           img: new URL('./../imgs/heroSaviorCoverFeat.png', import.meta.url).href,
           preview: '“I will not allow it to persist further. Rejoice you ignorant hero, I will be the one to save your pitiful family, and friends before they are burned at your own hand. I will save you from the sorrow of destroying the same world that uplifted you to the title of hero.”'
@@ -30,7 +30,7 @@ const books = [
         auth: 'Tykki Mikki',
         type: 'Betrayal',
         preview: 'In the dimly lit alley behind the bustling city streets, a pact was broken and betrayal hung heavy in the air like the scent of rain before a storm. Lena stood there, her heart pounding against her ribs as she watched her supposed ally slip away into the shadows, leaving her stranded in the darkness.',
-        imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
+        imgs: [new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href],
         feat: {
           img: new URL( './../imgs/bitterHoneyCoverFeat.png', import.meta.url).href,
           preview: 'Days turned into weeks as Lena meticulously planned her retaliation. She tracked her former partner\'s every move, waiting for the perfect moment to strike. And when it finally came, it was like poetry in motion. With calculated precision, Lena executed her plan flawlessly.'
@@ -49,7 +49,7 @@ const books = [
         auth: 'Tykki Mikki',
         type: 'Slice of Life',
         preview: 'Marcus saw the cracks in his facade, the hollow emptiness that lurked behind his eyes. He had spent years chasing after success, believing that wealth and power would bring him happiness. But now, as he stood alone in his lavish apartment, he realized the cruel truth –',
-        imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
+        imgs: [new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href],
         feat: {
           img: new URL( './../imgs/mirrorCoverFeat.png', import.meta.url).href,
           preview: 'His wife, once his anchor in the storm, had become a stranger in their own home. And his children, who had once looked up to him with admiration, now saw him as nothing more than a distant figure, lost in his own world of illusion. Tears welled in Marcus\'s eyes as he faced the harsh reality of his life. He had spent so long chasing after a dream that was never his own, that he had forgotten what it meant to truly live.'
@@ -67,7 +67,7 @@ const books = [
         auth: 'Tykki Mikki',
         type: 'Fantasy',
         preview: 'In the heart of Eldoria, nestled among the towering spires of the capital city, lay the answer to their prayers – the Elixir of Divine Light, a rare potion said to hold the power to cure any ailment. But this precious elixir was not freely given to those in need.',
-        imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
+        imgs: [new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href],
         feat: {
           img: new URL( './../imgs/elixirCoverFeat.png', import.meta.url).href,
           preview: 'As she stood before the shimmering vials, her hands trembling with anticipation, Lysandra felt a surge of anger rise within her. How could they hoard such a precious gift while their people suffered? With a steady hand, she reached out and grasped the vial, feeling its warmth seep into her bones.' 
@@ -85,7 +85,7 @@ const books = [
       auth: 'Tykki Mikki',
       type: 'Your Choice',
       preview: 'Do you have a story you need help getting out? Do you like to write but dont feel you are creative enough? You favorite anonymous author can help you out with that. I have a specialty for writing climaxes in emaculate details.',
-      imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
+      imgs: [new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href],
       feat: {
         img: new URL( './../imgs/comingSoonFeat.png', import.meta.url).href,
         preview: 'Do you have a story you need help getting out? Do you like to write but dont feel you are creative enough? You favorite anonymous author can help you out with that. I have a specialty for writing climaxes in emaculate details.'
@@ -98,7 +98,7 @@ const books = [
     auth: 'Tykki Mikki',
     type: 'Your Choice',
     preview: 'Have you tried making a request? Your favorite anonymous author loves feedback and finds better motivation in community building. Please feel free to contact me if you feel you have a great story idea, or just want to give feedback.',
-    imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
+    imgs: [new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href, new URL( './../imgs/comingSoon.png', import.meta.url).href],
     feat: {
       img: new URL( './../imgs/comingSoonFeat.png', import.meta.url).href,
       preview: 'Have you tried making a request? Your favorite anonymous author loves feedback and finds better motivation in community building. Please feel free to contact me if you feel you have a great story idea, or just want to give feedback.'
