@@ -7,7 +7,7 @@ const books = [
         preview: '“You are a disappointment. To become that Thing\'s puppet… Have you no pride.. Have you no shame!” The voice seemed to echo throughout the dark and seemingly limitless manor. ',
         imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
         feat: {
-          img: './assets/imgs/heroSaviorCoverFeat.png',
+          img: 'assets/imgs/heroSaviorCoverFeat.png',
           preview: '“I will not allow it to persist further. Rejoice you ignorant hero, I will be the one to save your pitiful family, and friends before they are burned at your own hand. I will save you from the sorrow of destroying the same world that uplifted you to the title of hero.”'
         },
         text: [`“No… You monster! Why would you do this! You will damn us all!.”
@@ -32,7 +32,7 @@ const books = [
         preview: 'In the dimly lit alley behind the bustling city streets, a pact was broken and betrayal hung heavy in the air like the scent of rain before a storm. Lena stood there, her heart pounding against her ribs as she watched her supposed ally slip away into the shadows, leaving her stranded in the darkness.',
         imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
         feat: {
-          img: './assets/imgs/bitterHoneyCoverFeat.png',
+          img: 'assets/imgs/bitterHoneyCoverFeat.png',
           preview: 'Days turned into weeks as Lena meticulously planned her retaliation. She tracked her former partner\'s every move, waiting for the perfect moment to strike. And when it finally came, it was like poetry in motion. With calculated precision, Lena executed her plan flawlessly.'
         },
         text: [
@@ -51,7 +51,7 @@ const books = [
         preview: 'Marcus saw the cracks in his facade, the hollow emptiness that lurked behind his eyes. He had spent years chasing after success, believing that wealth and power would bring him happiness. But now, as he stood alone in his lavish apartment, he realized the cruel truth –',
         imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
         feat: {
-          img: './assets/imgs/mirrorCoverFeat.png',
+          img: 'assets/imgs/mirrorCoverFeat.png',
           preview: 'His wife, once his anchor in the storm, had become a stranger in their own home. And his children, who had once looked up to him with admiration, now saw him as nothing more than a distant figure, lost in his own world of illusion. Tears welled in Marcus\'s eyes as he faced the harsh reality of his life. He had spent so long chasing after a dream that was never his own, that he had forgotten what it meant to truly live.'
         },
         text: ['As the morning sun painted the world in hues of gold, Marcus stood before the mirror, his reflection a stark reminder of the life he had built. But as he gazed into the glass, he felt a chill seep into his bones, for staring back at him was not the man he had imagined himself to be. In the harsh light of day, Marcus saw the cracks in his facade, the hollow emptiness that lurked behind his eyes. He had spent years chasing after success, believing that wealth and power would bring him happiness. But now, as he stood alone in his lavish apartment, he realized the cruel truth – he was nothing more than a prisoner of his own making. The silence of the room echoed with the weight of his revelation, and Marcus felt the walls closing in around him. Every achievement, every accolade, felt meaningless in the face of the emptiness that consumed him.',
@@ -69,7 +69,7 @@ const books = [
         preview: 'In the heart of Eldoria, nestled among the towering spires of the capital city, lay the answer to their prayers – the Elixir of Divine Light, a rare potion said to hold the power to cure any ailment. But this precious elixir was not freely given to those in need.',
         imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
         feat: {
-          img: './assets/imgs/elixirCoverFeat.png',
+          img: 'assets/imgs/elixirCoverFeat.png',
           preview: 'As she stood before the shimmering vials, her hands trembling with anticipation, Lysandra felt a surge of anger rise within her. How could they hoard such a precious gift while their people suffered? With a steady hand, she reached out and grasped the vial, feeling its warmth seep into her bones.' 
         },
         text: ['In the kingdom of Eldoria, where magic danced in the air and dragons soared across the sky, a sinister shadow had descended. A sickness, born of unknown origins, spread its tendrils across the land, leaving death and despair in its wake. From the bustling cities to the quiet villages, none were spared from its merciless grasp. In the heart of Eldoria, nestled among the towering spires of the capital city, lay the answer to their prayers – the Elixir of Divine Light, a rare potion said to hold the power to cure any ailment. But this precious elixir was not freely given to those in need. No, it was hoarded by the high class, locked away in their opulent estates, far from the reach of the suffering masses. Among those afflicted by the sickness was Lysandra, a humble healer whose heart burned with a fierce determination to save her people. With each passing day, she watched helplessly as her friends and family succumbed to the sickness, their bodies wracked with pain and fever.',
@@ -87,7 +87,7 @@ const books = [
       preview: 'Do you have a story you need help getting out? Do you like to write but dont feel you are creative enough? You favorite anonymous author can help you out with that. I have a specialty for writing climaxes in emaculate details.',
       imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
       feat: {
-        img: './assets/imgs/comingSoonFeat.png',
+        img: 'assets/imgs/comingSoonFeat.png',
         preview: 'Do you have a story you need help getting out? Do you like to write but dont feel you are creative enough? You favorite anonymous author can help you out with that. I have a specialty for writing climaxes in emaculate details.'
         
       }
@@ -100,7 +100,7 @@ const books = [
     preview: 'Have you tried making a request? Your favorite anonymous author loves feedback and finds better motivation in community building. Please feel free to contact me if you feel you have a great story idea, or just want to give feedback.',
     imgs: ['https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600', 'https://picsum.photos/seed/picsum/1200/600'],
     feat: {
-      img: './assets/imgs/comingSoonFeat.png',
+      img: 'assets/imgs/comingSoonFeat.png',
       preview: 'Have you tried making a request? Your favorite anonymous author loves feedback and finds better motivation in community building. Please feel free to contact me if you feel you have a great story idea, or just want to give feedback.'
       
     }
