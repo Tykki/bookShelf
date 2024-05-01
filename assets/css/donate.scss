@@ -10,9 +10,9 @@
   
   button{
     margin-top: 4em;
-    background-color: #ff3a3a;
-    border: 1px solid #ff7373 ;
-    // color: white;
+    background-color: var(--bs-indigo);
+    border: 1px solid var(--bs-purple);
+    color: white;
     font-family: 'Lato';
     text-transform: uppercase;
     font-weight: 900;
@@ -42,14 +42,14 @@
     // transition: all .5s ease-in-out;
     // transform: translateY(-400px);
     }
-    &.active {
-        form
-        {
+    // &.active {
+    //     form
+    //     {
             // opacity: 1;
             // transform: translateY(0px);
             // display: block;
-        }
-    }
+        // }
+    // }
 }
   .donate input{ 
     -webkit-appearance: none;
@@ -59,7 +59,7 @@
   .donate label{
     display: block;
     background-color: #f2f2f2;
-    color: #356bc6;
+    color: black;
     padding: 0.5em 0;
     width: 12rem;
     font-size: 1.4rem;
@@ -68,7 +68,7 @@
     transition: all 0.05s ease;
     &:hover, &:focus{
       background-color: #ffffff;
-      color: #2dbb55;
+      color: var(--bs-indigo);
       -ms-transform: scale(1.02,1.02); /* IE 9 */
       -webkit-transform: scale(1.02,1.02); /* Safari */
       transform: scale(1.02,1.02);
@@ -131,13 +131,13 @@
       outline: none;
     }
     button{
-      background-color: #2dbb55;
-      border-color: #2dbb55;
+      background-color: var(--bs-indigo);
+      border-color: var(--bs-purple);
       font-size: 1.2em;
       margin-top: 1.2em;
       transition: all 0.2s ease;
       &:hover, &:focus{
-        //background-color: red;
+        background-color: var(--bs-purple);;
         -ms-transform: scale(1.04,1.04); /* IE 9 */
       -webkit-transform: scale(1.04,1.04); /* Safari */
       transform: scale(1.04,1.04);
@@ -306,13 +306,13 @@
       outline: none;
     }
     button{
-      background-color: #2dbb55;
-      border-color: #2dbb55;
+      background-color: var(--bs-indigo);;
+      border-color: var(--bs-purple);;
       font-size: 1.2em;
       margin-top: 1.2em;
       transition: all 0.2s ease;
       &:hover, &:focus{
-        //background-color: red;
+        background-color: var(--bs-purple);;
         -ms-transform: scale(1.04,1.04); /* IE 9 */
       -webkit-transform: scale(1.04,1.04); /* Safari */
       transform: scale(1.04,1.04);
@@ -376,7 +376,7 @@
       text-align: center;
       margin: 0;
       letter-spacing: 0.2em;
-      color: #96bdff;
+      // color: #96bdff;
       font-weight: 700;
       opacity: 0.7;
       text-transform: uppercase;
@@ -418,7 +418,7 @@
     label{
       text-align: left;
       display: block;
-      color: white;
+      // color: white;
       font-weight: 300;
       font-size: 0.8em;
       text-transform: uppercase;
@@ -431,7 +431,7 @@
       background-color: rgba(26,68,139, 0.3);
       font-weight: 300;
       border: 0px solid rgba(132,178,255, 0.67);
-      color: white;
+      // color: white;
       font-size: 1.3em;
       box-sizing: border-box;
       padding-left: 0.75em;
@@ -441,13 +441,13 @@
       outline: none;
     }
     button{
-      background-color: #2dbb55;
-      border-color: #2dbb55;
+      background-color: var(--bs-indigo);;
+      border-color: var(--bs-purple);;
       font-size: 1.2em;
       margin-top: 1.2em;
       transition: all 0.2s ease;
       &:hover, &:focus{
-        //background-color: red;
+        background-color: var(--bs-purple);;
         -ms-transform: scale(1.04,1.04); /* IE 9 */
       -webkit-transform: scale(1.04,1.04); /* Safari */
       transform: scale(1.04,1.04);
@@ -463,15 +463,15 @@
     text-align: center;
     display: none;
     button{
-      background-color: #2dbb55;
-      border-color: #2dbb55;
+      background-color: var(--bs-indigo);;
+      border-color: var(--bs-purple);;
       font-size: 1.2em;
       transition: all 0.2s ease;
       display: block;
       margin: 1.5em auto 1em;
       text-shadow: 2px 2px #1f9a42;
       &:hover, &:focus{
-        //background-color: red;
+        background-color: var(--bs-purple);;
         -ms-transform: scale(1.04,1.04); /* IE 9 */
         -webkit-transform: scale(1.04,1.04); /* Safari */
         transform: scale(1.04,1.04);
@@ -484,7 +484,7 @@
       font-weight: 300;
       letter-spacing: 0.03em;
       padding-top: 1em;
-      color: white;
+      // color: white;
       margin: 0;
       font-size: 1.3em;
     }
@@ -492,7 +492,7 @@
       text-align: center;
       margin: 0;
       letter-spacing: 0.2em;
-      color: #96bdff;
+      // color: #96bdff;
       font-weight: 700;
       opacity: 0.7;
       text-transform: uppercase;
@@ -503,7 +503,7 @@
       display: inline-block;
       margin: 0 auto;
       border-radius: 5px;
-      color: white;
+      color: #2dbb55;
       font-weight: 700;
       font-size: 3.2em;
       letter-spacing: 0.1em;
@@ -520,7 +520,7 @@
       display: block;
     }
     h2{
-      color: #96bdff;
+      // color: #96bdff;
       margin: 0;
       padding-top: 0px;
       padding-bottom: 20px;
@@ -530,7 +530,7 @@
       letter-spacing: 0.1em;
     }
     p{
-      color: white;
+      // color: white;
       line-height:1.6;
       font-size: 1.4em;
       font-weight: 300;
@@ -554,7 +554,7 @@
     position: absolute;
     width: 130px;
     height: 100px;
-    background-color: #3672d7;
+    background-color: var(--bs-indigo);
     top: -3em;
     z-index: 999;
   }
@@ -590,7 +590,7 @@
   
   .outer{
     position: relative;
-    background-color: #2e64c0;
+    background-color: var(--bs-purple);
     height: 0.5em;
     width: 14em;
     margin: 1em auto;
@@ -600,7 +600,7 @@
   .progress{
     //display: none;
     position: absolute;
-    background-color: #528cef;
+    background-color: var(--bs-indigo);
     height: 0.5em;
     width: 0em;
     top: 0em;
@@ -614,7 +614,7 @@
   span{
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color: #96bdff;
+    // color: #96bdff;
   }
   }
   

@@ -159,7 +159,6 @@ let x = window.innerWidth - 400;
 document.querySelector('.donate form').addEventListener("click", () => {
  document.querySelectorAll('#donAmount input').forEach(input => {
   if (input.checked){
-    console.log(input.value)
     amount = input.value
   } 
  });
@@ -216,7 +215,6 @@ document.querySelector('#custom .back').addEventListener("click", () => {
 });
 
 document.querySelector('#details .next').addEventListener("click", () => {
-  console.log(amount);
   $("#details").hide("slide", { easing: "easeInQuart", direction: "left" }, 700, function(){
     $("#card").show("slide", { easing: "easeOutQuart", direction: "right" }, 700);
   });

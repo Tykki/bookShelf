@@ -31,7 +31,7 @@
     visibility: visible;
   }
   #shelf input[type=reset] {
-    background-color: #c22;
+    background-color: var(--bs-indigo);
     border: 0;
     border-radius: 0;
     color: #fff;
@@ -45,10 +45,10 @@
     appearance: none;
   }
   #shelf input[type=reset]:hover, #shelf input[type=reset]:focus {
-    background-color: #cd2222;
+    background-color: var(--bs-purple);
   }
   #shelf input[type=reset]:active {
-    background-color: #cb2222;
+    background-color: var(--bs-purple);
   }
   #shelf.container {
     animation: fadeIn 0.25s 0.25s linear forwards;

@@ -63,6 +63,20 @@ nav, footer{
   max-width: 1600px;
 }
 
+.choose-book{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#home .carousel-caption{
+  background-color: rgba(var(--bs-body-color-rgb), .33);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 20px;
+  margin: auto;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 

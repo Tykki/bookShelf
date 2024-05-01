@@ -23,7 +23,7 @@ home.innerHTML =`
     <div class="">
         <div class="text-center">
             <div class="">
-                <div id="carouselExampleCaptions" class="carousel slide">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       
                     

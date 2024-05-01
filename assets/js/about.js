@@ -15,7 +15,7 @@ const genreData = [{
 
 about.innerHTML = `
     <h1 class="m-5 fw-bold">About The Book Shelf</h1>
-    <h2 class="m-5 text-end lead fs-2 text-body-secondary">I hope you find inspiration</h2>
+    <h2 class="m-5 text-end lead fs-2 text-body-secondary">I hope you find entertainment in these genres</h2>
     <div class="container marketing">
         <!-- START THE FEATURETTES -->
 
